@@ -1,0 +1,233 @@
+# -*- text -*-
+# Copyright (C) 2019 The FreeRADIUS Server project and contributors
+# This work is licensed under CC-BY version 4.0 https://creativecommons.org/licenses/by/4.0
+#
+##############################################################################
+#
+#       Dictionary for Huawei.  See also dictionary.h3c
+#
+#       $Id: 42542fca8e744d92806179ffee06e0bc56727219 $
+#
+##############################################################################
+
+VENDOR		Huawei								2011
+
+BEGIN-VENDOR	Huawei
+
+ATTRIBUTE		HW-Input-Burst-Size					1	integer
+ATTRIBUTE		HW-Input-Average-Rate				2	integer
+ATTRIBUTE		HW-Input-Peak-Rate					3	integer
+ATTRIBUTE		HW-Output-Burst-Size				4	integer
+ATTRIBUTE		HW-Output-Average-Rate				5	integer
+ATTRIBUTE		HW-Output-Peak-Rate					6	integer
+ATTRIBUTE		HW-In-Kb-Before-T-Switch			7	integer
+ATTRIBUTE		HW-Out-Kb-Before-T-Switch			8	integer
+ATTRIBUTE		HW-In-Pkt-Before-T-Switch			9	integer
+ATTRIBUTE		HW-Out-Pkt-Before-T-Switch			10	integer
+ATTRIBUTE		HW-In-Kb-After-T-Switch				11	integer
+ATTRIBUTE		HW-Out-Kb-After-T-Switch			12	integer
+ATTRIBUTE		HW-In-Pkt-After-T-Switch			13	integer
+ATTRIBUTE		HW-Out-Pkt-After-T-Switch			14	integer
+ATTRIBUTE		HW-Remanent-Volume					15	integer
+ATTRIBUTE		HW-Tariff-Switch-Interval			16	integer
+ATTRIBUTE		HW-ISP-ID							17	string
+ATTRIBUTE		HW-Max-Users-Per-Logic-Port			18	integer
+ATTRIBUTE		HW-Command							20	integer
+ATTRIBUTE		HW-Priority							22	integer
+ATTRIBUTE		HW-Control-Identifier				24	integer
+
+ATTRIBUTE		HW-Result-Code						25	integer
+
+# > 0 indicates an error.
+VALUE   HW-Result-Code          Succeeded               0
+
+ATTRIBUTE		HW-Connect-ID						26	integer
+ATTRIBUTE		HW-PortalURL						27	string
+ATTRIBUTE		HW-FTP-Directory					28	string
+ATTRIBUTE		HW-Exec-Privilege					29	integer
+ATTRIBUTE		HW-IP-Address						30	integer
+ATTRIBUTE		HW-Qos-Profile-Name					31	string
+ATTRIBUTE		HW-SIP-Server						32	string
+ATTRIBUTE		HW-User-Password					33	string
+ATTRIBUTE		HW-Command-Mode						34	string
+ATTRIBUTE		HW-Renewal-Time						35	integer
+ATTRIBUTE		HW-Rebinding-Time					36	integer
+ATTRIBUTE		HW-IGMP-Enable						37	integer
+ATTRIBUTE		HW-Destnation-IP-Addr				39	string
+ATTRIBUTE		HW-Destnation-Volume				40	string
+ATTRIBUTE		HW-Startup-Stamp					59	integer
+ATTRIBUTE		HW-IPHost-Addr						60	string
+ATTRIBUTE		HW-Up-Priority						61	integer
+ATTRIBUTE		HW-Down-Priority					62	integer
+ATTRIBUTE		HW-Tunnel-VPN-Instance				63	string
+ATTRIBUTE		HW-VT-Name							64	integer
+ATTRIBUTE		HW-User-Date						65	string
+ATTRIBUTE		HW-User-Class						66	string
+ATTRIBUTE		HW-PPP-NCP-Type						70	integer
+ATTRIBUTE		HW-VSI-Name							71	string
+ATTRIBUTE		HW-Subnet-Mask						72	ipaddr
+ATTRIBUTE		HW-Gateway-Address					73	ipaddr
+ATTRIBUTE		HW-Lease-Time						74	integer
+ATTRIBUTE		HW-Primary-WINS						75	ipaddr
+ATTRIBUTE		HW-Secondary-WINS					76	ipaddr
+ATTRIBUTE		HW-Input-Peak-Burst-Size			77	integer
+ATTRIBUTE		HW-Output-Peak-Burst-Size			78	integer
+ATTRIBUTE		HW-Reduced-CIR						79	integer
+ATTRIBUTE		HW-Tunnel-Session-Limit				80	integer
+ATTRIBUTE		HW-Zone-Name						81	string
+ATTRIBUTE		HW-Data-Filter						82	string
+ATTRIBUTE		HW-Access-Service					83	string
+ATTRIBUTE		HW-Accounting-Level					84	integer
+ATTRIBUTE		HW-Portal-Mode						85	integer
+
+VALUE   HW-Portal-Mode          PADM                    0
+VALUE   HW-Portal-Mode          Redirectional           1
+VALUE   HW-Portal-Mode          Non-captive             2
+
+ATTRIBUTE       HW-DPI-Policy-Name                      86      string
+ATTRIBUTE       huawei-Policy-Route                     87      ipaddr
+ATTRIBUTE       HW-Framed-Pool                  88      string
+ATTRIBUTE       HW-L2TP-Terminate-Cause         89      string
+ATTRIBUTE       HW-Multi-Account-Mode           90      integer
+ATTRIBUTE       HW-Queue-Profile                        91      string
+ATTRIBUTE       HW-Layer4-Session-Limit         92      integer
+ATTRIBUTE       HW-Multicast-Profile            93      string
+ATTRIBUTE       HW-VPN-Instance                 94      string
+ATTRIBUTE       HW-Policy-Name                  95      string
+ATTRIBUTE       HW-Tunnel-Group-Name            96      string
+ATTRIBUTE       HW-Multicast-Source-Group               97      string
+ATTRIBUTE       HW-Multicast-Receive-Group              98      ipaddr
+ATTRIBUTE       HW-User-Multicast-Type          99      integer
+ATTRIBUTE       HW-Reduced-PIR                  100     integer
+ATTRIBUTE       HW-LI-ID                                101     string
+ATTRIBUTE       HW-LI-Md-Address                        102     ipaddr
+ATTRIBUTE       HW-LI-Md-Port                   103     integer
+ATTRIBUTE       HW-LI-Md-VpnInstance            104     string
+ATTRIBUTE       HW-Service-Chg-Cmd                      105     integer
+ATTRIBUTE       HW-Acct-Packet-Type                     106     integer
+ATTRIBUTE       HW-Call-Reference                       107     integer
+ATTRIBUTE       HW-PSTN-Port                    108     integer
+ATTRIBUTE       HW-Voip-Service-Type            109     integer
+ATTRIBUTE       HW-Acct-Connection-Time         110     integer
+ATTRIBUTE       HW-Error-Reason                 112     integer
+ATTRIBUTE       HW-Remain-Monney                        113     integer
+ATTRIBUTE       HW-Org-GK-ipaddr                        123     ipaddr
+ATTRIBUTE       HW-Org-GW-ipaddr                        124     ipaddr
+ATTRIBUTE       HW-Dst-GK-ipaddr                        125     ipaddr
+ATTRIBUTE       HW-Dst-GW-ipaddr                        126     ipaddr
+ATTRIBUTE       HW-Access-Num                   127     string
+ATTRIBUTE       HW-Remain-Time                  128     integer
+ATTRIBUTE       HW-Codec-Type                   131     integer
+ATTRIBUTE       HW-Transfer-Num                 132     string
+ATTRIBUTE       HW-New-User-Name                        133     string
+ATTRIBUTE       HW-Transfer-Station-Id          134     string
+ATTRIBUTE       HW-Primary-DNS                  135     ipaddr
+ATTRIBUTE       HW-Secondary-DNS                        136     ipaddr
+ATTRIBUTE       HW-ONLY-Account-Type            137     integer
+ATTRIBUTE       HW-Domain-Name                  138     string
+ATTRIBUTE       HW-ANCP-Profile                 139     string
+ATTRIBUTE       HW-HTTP-Redirect-URL            140     string
+ATTRIBUTE       HW-Loopback-Address                     141     string
+ATTRIBUTE       HW-QoS-Profile-Type                     142     integer
+
+VALUE   HW-QoS-Profile-Type             Original                0
+VALUE   HW-QoS-Profile-Type             L2TP-Inbound            1
+VALUE   HW-QoS-Profile-Type             L2TP-Outbound           2
+VALUE   HW-QoS-Profile-Type             L2TP                    3
+
+ATTRIBUTE       HW-Max-List-Num                 143     integer
+ATTRIBUTE       HW-Acct-IPv6-Input-Octets               144     integer
+ATTRIBUTE       HW-Acct-IPv6-Output-Octets              145     integer
+ATTRIBUTE       HW-Acct-IPv6-Input-Packets              146     integer
+ATTRIBUTE       HW-Acct-IPv6-Output-Packets             147     integer
+ATTRIBUTE       HW-Acct-IPv6-Input-Gigawords    148     integer
+ATTRIBUTE       HW-Acct-IPv6-Output-Gigawords   149     integer
+ATTRIBUTE       HW-DHCPv6-Option37                      150     string
+ATTRIBUTE       HW-DHCPv6-Option38                      151     string
+ATTRIBUTE       HW-User-Mac                             153     string
+ATTRIBUTE       HW-DNS-Server-IPv6-address              154     ipv6prefix # manual says ipv6addr with length 18?!
+ATTRIBUTE       HW-DHCPv4-Option121                     155     string
+ATTRIBUTE       HW-DHCPv4-Option43                      156     string
+ATTRIBUTE       HW-Framed-Pool-Group            157     string
+ATTRIBUTE       HW-Framed-IPv6-Address          158     ipv6prefix # manual says 18 byte string?
+ATTRIBUTE       HW-Acct-Update-Address          159     integer
+ATTRIBUTE       HW-NAT-Policy-Name                      160     string
+ATTRIBUTE       HW-NAT-Public-Address           161     string
+ATTRIBUTE       HW-NAT-Start-Port                       162     string
+ATTRIBUTE       HW-NAT-End-Port                 163     string
+ATTRIBUTE       HW-NAT-Port-Forwarding          164     string
+ATTRIBUTE       HW-NAT-Port-Range-Update                165     integer
+ATTRIBUTE       HW-DS-Lite-Tunnel-Name          166     string
+ATTRIBUTE       HW-PCP-Server-Name                      167     string # manual says text?
+ATTRIBUTE       HW-Public-IP-Addr-State         168     integer
+
+VALUE   HW-Public-IP-Addr-State Safe                    0
+VALUE   HW-Public-IP-Addr-State Warning                 1
+VALUE   HW-Public-IP-Addr-State Danger                  2
+
+ATTRIBUTE       HW-Auth-Type                    180     integer
+
+VALUE   HW-Auth-Type            PPP                     1
+VALUE   HW-Auth-Type            Web                     2
+VALUE   HW-Auth-Type            Dot1x                   3
+VALUE   HW-Auth-Type            Fast                    4
+VALUE   HW-Auth-Type            Bind                    5
+VALUE   HW-Auth-Type            WLAN                    6
+VALUE   HW-Auth-Type            Administrative          7
+VALUE   HW-Auth-Type            Tunnel                  8
+VALUE   HW-Auth-Type            MIP                     9
+VALUE   HW-Auth-Type            None                    10
+
+ATTRIBUTE       HW-Acct-Terminate-Subcause              181     string
+ATTRIBUTE       HW-Down-QOS-Profile-Name                182     string
+ATTRIBUTE       HW-Port-Mirror                  183     integer
+
+VALUE   HW-Port-Mirror          Disable                 0
+VALUE   HW-Port-Mirror          Uplink-Enable           1
+VALUE   HW-Port-Mirror          Downlink-Enable         2
+VALUE   HW-Port-Mirror          Enable                  3
+
+ATTRIBUTE       HW-Account-Info                 184     string
+ATTRIBUTE       HW-Service-Info                 185     string
+ATTRIBUTE       HW-DHCP-Option                  187     octets
+ATTRIBUTE       HW-AVpair                               188     string
+ATTRIBUTE       HW-Delegated-IPv6-Prefix-Pool   191     string
+ATTRIBUTE       HW-IPv6-Prefix-Lease            192     octets
+ATTRIBUTE       HW-IPv6-Address-Lease           193     octets
+ATTRIBUTE       HW-IPv6-Policy-Route            194     ipv6prefix # manual says string?
+ATTRIBUTE       HW-MNG-IPv6                             196     integer
+
+VALUE   HW-MNG-IPv6                     Unsupported             0
+VALUE   HW-MNG-IPv6                     Supported               1
+
+ATTRIBUTE       HW-Flow-Info                    211     string
+ATTRIBUTE       HW-Flow-Id                              212     integer
+ATTRIBUTE       HW-DHCP-Server-IP                       214     ipaddr
+ATTRIBUTE       HW-Application-Type                     215     integer
+
+VALUE   HW-Application-Type             Fixed                   1
+VALUE   HW-Application-Type             Nomadic                 2
+VALUE   HW-Application-Type             Portable                3
+VALUE   HW-Application-Type             Simple-Mobile           4
+VALUE   HW-Application-Type             Full-Mobile             5
+
+ATTRIBUTE       HW-Indication-Flag                      216     octets # integer??
+ATTRIBUTE       HW-Original_NAS-IP_Address              217     ipaddr
+ATTRIBUTE       HW-User-Priority                        218     integer
+
+VALUE   HW-User-Priority                Common                  0
+VALUE   HW-User-Priority                Copper                  1
+VALUE   HW-User-Priority                Silver                  2
+VALUE   HW-User-Priority                Gold                    3
+
+ATTRIBUTE       HW-ACS-Url                              219     string
+ATTRIBUTE       HW-Provision-Code                       220     string
+ATTRIBUTE       HW-Application-Scene            221     octets
+ATTRIBUTE       HW-MS-Maximum-MAC-Study-Number  222     octets # ether??
+ATTRIBUTE       HW-GGSN-Vendor                  232     string
+ATTRIBUTE       HW-GGSN-Version                 233     string
+ATTRIBUTE       HW-Web-URL                              253     string
+ATTRIBUTE       HW-Version                              254     string
+ATTRIBUTE       HW-Product-ID                   255     string
+
+END-VENDOR      Huawei

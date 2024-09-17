@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	ClientUsername = "tim"
+	ClientUsername = "rodrigoprazim"
 	ClientPassword = "12345"
 )
 
